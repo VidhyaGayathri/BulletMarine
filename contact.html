@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bullet Marine</title>
+    <!-- font awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+   
+    <!---------------------------------HEADER-AREA---------------------------->
+
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header-info">
+                        <ul>
+                            <li><a href="mailto:bulletmarine99@gmail.com"><i class="fa fa-envelope"></i> bulletmarine99@gmail.com</a></li>
+                            <li><a href="tel:+65 68624402"><i class="fa fa-phone"></i> +65 68624402</a> </li>
+                            <li><i class="fa fa-clock-o"></i> Mon - Fri, 9am - 5pm </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="header-text">
+                        <span class ="company-name">Bullet Marine Pte Ltd</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="#"><img class="bullet-logo" src="img/bullet-logo.jpg" alt=""></a>
+                    </div>
+                    <div class="responsive-menu-wrap"></div>
+                </div>
+                <div class="col-md-9">
+                    <div class="mainmenu">
+                        <ul id="nav">
+                            <li class="current_page_item"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="gallery.html">gallery</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="safety.html">Safety</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!---------------------------------BREADCRUMP-AREA---------------------------->
+    
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="breadcrumb-text">
+                        <h2>contact</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Home</a><span></span></li>
+                            <li class="active">contact</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="breadcrumb-sub-title">
+                        <h3>It’s time to learn more about us</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!---------------------------------CONTACT-AREA---------------------------->
+    
+    <div class="contact-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="contact-form-wrap">
+                        <h3 class="contact-title">Send us a message</h3>
+                        <form method="post" action="send_form_email.php">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="name"placeholder="Your name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" placeholder="Your email">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" name="subject" placeholder="subject">
+                                    <textarea name="message" placeholder="Your message"></textarea>
+                                    <input type="submit" name="submit" value="Send message">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <h3 class="contact-title">Locate us on Google Map</h3>
+                    <div id="googleMap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>Copyright &copy; 2017 <a href="#">Bullet Marine</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlZPf84AAVt8_FFN7rwQY5nPgB02SlTKs"></script>
+    <script>
+        var myCenter = new google.maps.LatLng(1.334104, 103.698872);
+
+        function initialize() {
+            var mapProp = {
+                center: myCenter,
+                scrollwheel: false,
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                animation: google.maps.Animation.BOUNCE,
+                icon: '',
+                map: map,
+            });
+            var styles = [{
+                stylers: [{
+                        hue: "#96C346"
+                    },
+                    {
+                        saturation: -100
+                    }
+                ]
+            }, ];
+            map.setOptions({
+                styles: styles
+            });
+            marker.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</body>
+
+</html>
